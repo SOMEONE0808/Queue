@@ -4,7 +4,7 @@
 
 ### QueueModule.new
     QueueModule.new(name: any, DebugMode: boolean) -> Queue
-Create Queue instance<br/>
+Create [Queue](https://someone0808.github.io/Queue/api/#queue-api) instance<br/>
 if name is **nil**, the queue will not have any name
 
 ## Queue API
