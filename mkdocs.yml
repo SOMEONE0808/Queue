@@ -1,0 +1,51 @@
+site_name: Queue Module
+docs_dir: src
+site_dir: docs
+theme:
+  name: material
+  palette:
+    scheme: custom
+extra_css:
+  - stylesheets/extra.css
+# Markdown 플러그인
+markdown_extensions:
+    # 컴포넌트
+    - pymdownx.tabbed # 탭
+    - admonition # 노트라인
+    - pymdownx.details # 더보기(확장 가능한 라벨)
+    - pymdownx.progressbar # 프로그래스 바
+    - attr_list # ID 붙이기
+    - def_list # 기본 리스트
+
+    # 기초 설정
+    - footnotes # 바닥글
+    - pymdownx.superfences # 스페이스 관현, 펜스 중첩허용
+    - pymdownx.keys # 단축키(검색)
+    - pymdownx.magiclink # 링크 확장기
+    - pymdownx.inlinehilite # 인라인 코드 하이라이팅
+    - pymdownx.highlight: # 코드 구문강조
+    - pymdownx.emoji: # 이모지 불러오기
+          emoji_generator: !!python/name:pymdownx.emoji.to_svg
+    - pymdownx.tasklist: # 체크박스 불러오기
+          custom_checkbox: true
+    - pymdownx.betterem: # 더 나은 글자 서식 알고리즘
+          smart_enable: all
+    - pymdownx.smartsymbols: # 특수문자 쉬운입력
+        fractions: false
+    - markdown_include.include: # 다른 md 파일 가져와서 보여주기
+        base_path: docroot
+
+    # 기타 세부 설정
+    - codehilite: # 코드 언어 추측 끄기
+          guess_lang: false
+    - toc: # 부분 링크 허용
+          permalink: true
+    - meta # 메타데이터 관련
+
+nav:
+  - Home: 'index.md'
+  - Guide:
+    - Installation: 'guide/installation.md'
+    - How to use: 'guide/how-to-use.md'
+    - 'Example: Alert': 'guide/example-alert.md'
+  - API: 'api.md'
