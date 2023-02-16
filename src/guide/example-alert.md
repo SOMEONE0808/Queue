@@ -26,8 +26,6 @@ end
 
 queue:Wait(3)
 for i = 1, 5 do
-    task.spawn(function()
-        queue:Add({1, 2, 3}, F)
-    end)
+    queue:Add({1, 2, 3}, F)
 end
 ```
